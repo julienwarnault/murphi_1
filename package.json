@@ -1,0 +1,62 @@
+{
+  "name": "murphi",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node bin/server.js",
+    "build": "node ace build",
+    "dev": "node ace serve --watch",
+    "test": "node ace test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "imports": {
+    "#core/*": "./app/core/*.js",
+    "#database/*": "./database/*.js",
+    "#start/*": "./start/*.js",
+    "#tests/*": "./tests/*.js",
+    "#config/*": "./config/*.js"
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^7.2.3",
+    "@adonisjs/eslint-config": "^1.2.2",
+    "@adonisjs/prettier-config": "^1.2.2",
+    "@adonisjs/tsconfig": "^1.2.2",
+    "@japa/assert": "^2.1.0",
+    "@japa/plugin-adonisjs": "^3.0.0",
+    "@japa/runner": "^3.1.1",
+    "@swc/core": "^1.4.2",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "pino-pretty": "^10.3.1",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^6.3.1",
+    "@adonisjs/cors": "^2.2.1",
+    "@adonisjs/inertia": "1.0.0-17",
+    "@adonisjs/session": "^7.1.1",
+    "@adonisjs/shield": "^8.1.1",
+    "@adonisjs/static": "^1.1.1",
+    "@adonisjs/vite": "^3.0.0-7",
+    "@inertiajs/react": "^1.0.15",
+    "@vinejs/vine": "^1.7.1",
+    "edge.js": "^6.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reflect-metadata": "^0.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@adonisjs/eslint-config/app"
+  },
+  "prettier": "@adonisjs/prettier-config"
+}
