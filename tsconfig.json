@@ -5,6 +5,7 @@
     "outDir": "./build",
     "paths": {
       "#core/*": ["./app/core/*.js"],
+      "#videos/*": ["./app/videos/*.js"],
       "#database/*": ["./database/*.js"],
       "#tests/*": ["./tests/*.js"],
       "#start/*": ["./start/*.js"],

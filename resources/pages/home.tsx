@@ -1,4 +1,4 @@
-import { Head } from '@inertiajs/react'
+import { Head, Link } from '@inertiajs/react'
 
 export default function Home() {
   return (
@@ -7,6 +7,9 @@ export default function Home() {
 
       <div>
         <h1>Murphi</h1>
+        <Link as="button" href="/videos" method="post" data={{ prompt: 'Christophe Colomb' }}>
+          Create Video
+        </Link>
       </div>
     </>
   )
